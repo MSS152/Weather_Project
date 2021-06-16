@@ -19,8 +19,7 @@ let weather = {
   displayWeather: function (city) {
     const { name } = city;
     const { icon, description } = city.weather[0];
-    const { temp, humidity } = city.main;
-    const { speed } = city.wind;
+    const { temp } = city.main;
     document.querySelector(".city").innerText = "Weather in " + name;
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
